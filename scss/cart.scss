@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+/* Cart page styles */
+
+.block-12{ 
+	select{
+		width: 190px;
+	}
+	.discount-tag{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	.summary{
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+	}
+	input[type="text"]{
+		width: 100%;
+	}
+	.quantity-block{
+		width: 94px;
+		input[type="number"]{
+			width: 63px;
+			-webkit-appearance: none;
+			appearance: none;		
+			height: 40px;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 10px 0px 0px 10px;
+			padding: 0px;
+			text-align: center;
+			padding: 0px 15px;
+			&:focus{
+				outline: -webkit-focus-ring-color auto 0px;
+			}
+		}
+		.buttons-block{
+			width: 31px;
+			border-top: 1px solid rgba(0, 0, 0, 0.1);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			border-right: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 0px 10px 10px 0px;
+			.quantity-arrow-plus, .quantity-arrow-minus{
+				cursor: pointer;
+				height: 50%;
+				opacity: 0.3;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: all 0.2s;
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+	@media(max-width: 1200px){
+		select{
+			width: 100px;
+		}
+	}
+}

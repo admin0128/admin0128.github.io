@@ -1,0 +1,85 @@
+/* Variables */
+/* Checkout page styles */
+.block-15 .line-header {
+  height: 1px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px; }
+
+.block-15 form label {
+  margin-left: 33px; }
+
+.block-15 form input[type="text"] {
+  color: #000000; }
+
+.block-15 form input[type="radio"]:before {
+  height: 21px;
+  width: 21px; }
+
+.block-15 form input[type="radio"]:after {
+  height: 11px;
+  width: 11px;
+  left: 6px; }
+
+.block-15 form #payment-method {
+  width: 200px; }
+
+.block-15 form .card-info {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px; }
+  .block-15 form .card-info input#card-number {
+    border: 0px;
+    border-right: 0px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0 0 10px;
+    width: 62%;
+    background: transparent url("../i/card.svg") no-repeat 7% 50%;
+    padding-left: 45px; }
+  .block-15 form .card-info input#card-period {
+    border: 0px;
+    width: 25%;
+    padding: 0 14px 0 14px;
+    text-align: center; }
+  .block-15 form .card-info input#card-cvc {
+    border: 0px;
+    border-left: 0px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px 10px 10px 0px;
+    width: 13%;
+    padding: 0 10px 0 0;
+    text-align: center; }
+  .block-15 form .card-info .separator {
+    height: 30px;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+
+@media (max-width: 992px) {
+  .block-15 form #payment-method {
+    width: 100%; }
+  .block-15 form .card-info {
+    border-top: 0px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px; }
+    .block-15 form .card-info input#card-number {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 100%;
+      background: transparent url("../i/card.svg") no-repeat 4% 50%; }
+    .block-15 form .card-info input#card-period {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      width: 30%;
+      padding: 0 16px; }
+    .block-15 form .card-info input#card-cvc {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 30%;
+      padding: 0 16px; } }
+
+@media (max-width: 575px) {
+  .block-15 form .card-info input#card-period {
+    width: 49%; }
+  .block-15 form .card-info input#card-cvc {
+    width: 49%; } }

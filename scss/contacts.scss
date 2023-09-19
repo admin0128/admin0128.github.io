@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+/* Contacts page styles */
+
+.block-19{
+	form{
+		textarea{
+			height: 137px;
+		}
+	}
+	.contact-form{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@media(max-width: 991.98px){
+		#map{
+			height: 50vw;
+		}
+		.contact-form{
+			position: relative;
+			right: auto;
+			top: auto;
+			transform: none;
+		}		
+	}
+	@media(max-width: 767.98px){
+		#map{
+			height: 100vw;
+		}		
+	}
+}

@@ -1,0 +1,70 @@
+@import "variables.scss";
+
+/* About page styles */
+
+.block-21{
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc((100vw / 1.684) - 80px);
+	position: relative;
+ 	&:after{
+		content:'';
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		display: block;
+		background: rgba(0,0,0,0.6);
+		z-index:0;
+	} 
+	.play-btn{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translateY(-50%) translateX(-50%);
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		background: $white url("../i/play.svg") no-repeat 50% 50%;
+		background-size: 32px 32px;
+		z-index:5;
+	}
+	@media(max-width: 767.98px){
+		height: calc(100vh - 80px);
+		.play-btn{
+			height: 50px;
+			width: 50px;
+			background-size: 20px 20px;
+		}		
+	}
+}
+
+.block-24{
+	@media(max-width: 992px){
+		img{
+			margin-right: 70px;
+			margin-bottom: 20px;
+			&:nth-of-type(3n){
+				margin-right: 0;
+			}
+		}
+	}
+	@media(max-width: 768px){
+		img{
+			margin-right: 50px;
+		}		
+	}
+	@media(max-width: 576px){
+		img{
+			margin-right: 20px;
+			&:nth-of-type(3n){
+				margin-right: 20px;
+			}
+			&:nth-of-type(2n){
+				margin-right: 0px;
+			}			
+		}		
+	}	
+}

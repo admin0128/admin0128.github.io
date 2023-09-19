@@ -1,0 +1,6 @@
+.roadmap-slider .slick-list {
+  overflow: visible;
+  cursor: move; }
+
+.roadmap-slider .slick-slide {
+  padding-top: 6px; }

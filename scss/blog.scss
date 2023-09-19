@@ -1,0 +1,126 @@
+@import "variables.scss";
+
+/* Blog page styles */
+
+.block-25, .block-26{
+	.blog-category{
+		height: 24px;
+		color: $accent-blue-4;
+		background: $accent-blue-2;
+		border-radius: 20px;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.5px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.mini-blog-posts{
+		border-left: 1px solid $grey-dark-2;
+	}
+	.blog-post{
+		border-bottom: 1px solid $grey-dark-2;
+		&:nth-of-type(3), &:last-of-type{
+			border-bottom: none;
+		}
+	}
+	@media(max-width: 991.98px){
+		.big-blog-post{
+			border-bottom: 1px solid $grey-dark-2;			
+		}
+	}
+	@media(max-width: 767.98px){
+		.mini-blog-posts{
+			border-left: none;
+		}
+		.blog-post{
+			&:nth-of-type(3){
+				border-bottom: 1px solid $grey-dark-2;
+				padding-bottom: 20px;
+			}
+		}		
+	}
+}
+
+.block-26, .block-28{
+	.post-block{
+		height: 540px;
+		overflow: hidden;
+		border-radius: 10px 10px 10px 10px;
+		&:hover{
+			filter: drop-shadow(0px 30px 100px rgba(0, 0, 0, 0.08));			
+		}
+		.img-block{
+			height: calc(100% - 270px);
+			width: 100%;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;			
+		}
+		.post-block-inner{
+			border-right: 1px solid $grey-dark-2;
+			border-left: 1px solid $grey-dark-2;
+			border-bottom: 1px solid $grey-dark-2;
+			border-radius: 0 0 10px 10px;
+			height: 270px;
+			position: relative;
+			background: $white;
+			.blog-header{
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;  
+			}
+			.date-info{
+				position: absolute;
+				bottom:20px;
+			}
+		}
+		&.no-picture{
+			.post-block-inner{
+				background: $accent-blue-1;
+				border-radius: 10px;
+				border: none;
+				height: 540px;
+				.blog-header{
+					-webkit-line-clamp: 7;
+				}				
+			}
+		}
+	}
+	@media(max-width: 767.98px){
+		.post-block{
+			height: auto;
+			.img-block{
+				height: calc(540px / 1.52);
+			}
+			.post-block-inner{
+				height: auto;
+				position: relative;
+				background: $white;
+				.blog-header{
+					overflow: visible;
+					text-overflow: none;
+					display: block;
+					margin-bottom: 40px;
+				}
+				.date-info{
+					position: relative;
+					bottom:auto;
+				}
+			}
+			&.no-picture{
+				.post-block-inner{
+					height: auto;
+				}
+			}
+		}		
+	}
+	@media(max-width: 576.98px){
+		.post-block{
+			.img-block{
+				height: calc((100vw - 30px) / 1.52);
+			}
+		}		
+	}	
+}

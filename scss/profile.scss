@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+/* Profile page styles */
+
+.block-16, .block-17{
+	.user-avatar{
+		&.no-photo{
+			height: 65px;
+			width: 65px;
+			border-radius: 50%;
+			background: $accent-blue-1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 65px;
+			letter-spacing: -0.8px;
+			color: $accent-blue-4;		
+		}
+	}
+
+	.order-block{
+		.status{
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: -0.5px;
+			padding-left: 10px;
+			padding-right: 10px;
+			border-radius: 20px;
+			&.on-the-way{
+				background: $accent-blue-1;
+				color: $accent-blue-4;
+			}
+			&.done{
+				background: rgba(144, 218, 26, 0.1);
+				color: #90DA1A;
+			}
+			&.canceled{
+				background: rgba(255, 78, 78, 0.1);
+				color: #FF4E4E;
+			}
+		}
+	}
+	
+}
