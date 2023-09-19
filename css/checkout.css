@@ -1,5 +1,13 @@
 /* Variables */
 /* Checkout page styles */
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+left: -25px;
+}
 .block-15 .line-header {
   height: 1px;
   width: 100%;
